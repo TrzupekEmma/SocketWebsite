@@ -1,0 +1,108 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #f1eaf3;
+    margin: 0;
+    padding: 0;
+    color: #212529;
+}
+* {
+  box-sizing: border-box;
+}
+.banner{
+    position: fixed;
+    z-index: 100;
+    padding-left: 0.8%;
+    padding-right: 1.5%;
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+    width:100%;
+    font-size:150%;
+    background-color: #350f48;
+    color: #efebf0;
+    display: grid;
+    grid-column-gap: 0.5%;
+}
+.banner > div{
+    /*border: 2px solid black;*/
+    border-radius: 10px;
+    text-align: center;
+}
+.form{
+    padding-top: 1.5%;
+    font-size: 200%;
+    padding-bottom: 0.5%;
+    padding-left: 10%;
+    outline: #212529;
+    background-color: #e2b3d9;
+    margin: 1% 15% 1% 15%;
+}
+input[type=text], input[type=password]{
+    
+    font-size: 100%;
+    border: 1px solid #780c9c;
+    border-radius: 12px;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    height: 60px;
+    width: 80%;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: 3.5%;
+    padding-top: 0;
+    padding-left: 60px;
+}
+input[type=text]{
+  background-image: url('/static/user.png');
+}
+input[type=submit]{
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-left: 60%;
+    width: 20%;
+    height: 60px;
+    font-size: 100%;
+    color:#e6d1ea;
+    background-color: #6d2c7a;
+}
+input[type=password]{
+  background-image: url('/static/password.png');
+}
+#banner1{
+    grid-template-columns: 70% 10% 10% 10%;
+}
+#banner2{
+    grid-template-columns: 80% 10% 10%;
+}
+.welcome{
+    font-family: Brush Script MT, cursive;
+    font-size: 200%;
+    padding: 0%;
+    margin: 0%;
+}
+.welcome > p{
+    margin: 0%;
+}
+.button > a {
+    color: #e6d1ea;
+    display: block;
+    margin:0%;
+}
+a{
+    text-decoration: none;
+}
+a > p{
+    padding-top:5%;
+    padding-bottom: 6%;
+    margin:0%;
+}
+.button > a:visited {
+    color: #e6d1ea;
+}
+.category > a {
+    color: #6d2c7a;
+}
+.category > a:visited {
+    color: #6d2c7a;
+}
