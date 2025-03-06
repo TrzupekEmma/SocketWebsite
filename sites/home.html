@@ -10,14 +10,17 @@
 
 <body>
     <div class="error-container">
-        {% if user %}
-        <h1> welcome {{user}} </h1>
-        {% else %}
-        <a href="/login">Please log in to continue</a>
-        {% end %}
-        <p>
-            main site this way
-        </p>
+        {% for num in coolNumbers %}
+            {% if user %}
+                <h1> welcome {{user}} </h1>
+            {% else %}
+                <a href="/login">Please log in to continue</a>
+            {% endif %}
+            <p>
+                main site this way
+            </p>
+
+        {% endfor %}
     </div>
 </body>
 
